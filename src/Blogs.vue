@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <div v-for="post in posts" :key="post.id">
       <h3>{{post.title}}</h3>
-      <p>{{post.body}}</p>
+      <p>{{post.body | snipet}}</p>
     </div>
   </div>
 </template>
