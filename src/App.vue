@@ -4,6 +4,7 @@
     <Navbar/>
     <AllFriends :friends="friends" @delete="unfriend"/>
     <OnlineFriends :friends="friends"/>
+    <Blogs/>
   </div>
 </template>
 
@@ -11,12 +12,14 @@
 import Navbar from "./Navbar";
 import AllFriends from "./AllFriends";
 import OnlineFriends from "./OnlineFriends";
+import Blogs from "./Blogs";
 export default {
   name: "app",
   components: {
     Navbar: Navbar,
     AllFriends,
-    OnlineFriends
+    OnlineFriends,
+    Blogs
   },
   data() {
     return {
